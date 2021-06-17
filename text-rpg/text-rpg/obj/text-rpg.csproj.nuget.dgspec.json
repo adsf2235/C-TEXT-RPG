@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\개발\\C#\\TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj": {}
+    "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\개발\\C#\\TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj": {
+    "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\개발\\C#\\TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
         "projectName": "text-rpg",
-        "projectPath": "C:\\Users\\User\\Desktop\\개발\\C#\\TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\개발\\C#\\TEXT-RPG\\text-rpg\\text-rpg\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

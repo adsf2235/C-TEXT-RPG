@@ -41,8 +41,15 @@ namespace text_rpg
                     Console.ReadKey();
                     return STARTSELECT.SELECTFILED;
                 default:
+                    Console.WriteLine("잘못된 선택입니다");
+                    Console.ReadKey();
                     return STARTSELECT.NONESELECT;
 
+            }
+
+            static void Town()
+            {
+                Console.WriteLine("마을에서 무슨일을 하시겠습니까?");
             }
 
             
@@ -51,7 +58,20 @@ namespace text_rpg
         {
             while (true)
             {
-                StartSelect();
+               STARTSELECT SelectCheck = StartSelect();
+
+                switch (SelectCheck)
+                {
+                    case STARTSELECT.SELECTTOWN:
+                        Town();
+                        break;
+                    case STARTSELECT.SELECTFILED:
+                        break;
+                    case STARTSELECT.NONESELECT:
+                        break;
+                    default:
+                        break;
+                }
             }
             
         }
