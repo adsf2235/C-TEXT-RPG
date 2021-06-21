@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\USER\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
+      "projectUniqueName": "C:\\Users\\USER\\Desktop\\개발\\project\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
       "projectName": "text-rpg",
-      "projectPath": "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\개발\\C-TEXT-RPG\\text-rpg\\text-rpg\\obj\\",
+      "projectPath": "C:\\Users\\USER\\Desktop\\개발\\project\\C-TEXT-RPG\\text-rpg\\text-rpg\\text-rpg.csproj",
+      "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\USER\\Desktop\\개발\\project\\C-TEXT-RPG\\text-rpg\\text-rpg\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

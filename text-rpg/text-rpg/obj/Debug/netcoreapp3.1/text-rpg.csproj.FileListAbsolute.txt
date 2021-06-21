@@ -24,3 +24,16 @@ C:\Users\User\Desktop\개발\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.
 C:\Users\User\Desktop\개발\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.dll
 C:\Users\User\Desktop\개발\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.pdb
 C:\Users\User\Desktop\개발\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.genruntimeconfig.cache
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.exe
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.deps.json
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.runtimeconfig.json
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.runtimeconfig.dev.json
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.dll
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\bin\Debug\netcoreapp3.1\text-rpg.pdb
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.csproj.AssemblyReference.cache
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.AssemblyInfoInputs.cache
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.AssemblyInfo.cs
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.dll
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.pdb
+C:\Users\USER\Desktop\개발\project\C-TEXT-RPG\text-rpg\text-rpg\obj\Debug\netcoreapp3.1\text-rpg.genruntimeconfig.cache
