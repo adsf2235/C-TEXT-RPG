@@ -1,0 +1,13 @@
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\bin\Debug\netcoreapp3.1\Property.exe
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\bin\Debug\netcoreapp3.1\Property.deps.json
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\bin\Debug\netcoreapp3.1\Property.runtimeconfig.json
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\bin\Debug\netcoreapp3.1\Property.runtimeconfig.dev.json
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\bin\Debug\netcoreapp3.1\Property.dll
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\bin\Debug\netcoreapp3.1\Property.pdb
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.AssemblyInfo.cs
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.dll
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.pdb
+C:\Users\User\Desktop\개발\project\C-TEXT-RPG\text-rpg\Property\Property\obj\Debug\netcoreapp3.1\Property.genruntimeconfig.cache
