@@ -1,0 +1,13 @@
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.csproj.AssemblyReference.cache
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.AssemblyInfoInputs.cache
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.AssemblyInfo.cs
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.csproj.CoreCompileInputs.cache
+D:\개발\project\C-TEXT-RPG\Inventory\bin\Debug\netcoreapp3.1\Inventory.exe
+D:\개발\project\C-TEXT-RPG\Inventory\bin\Debug\netcoreapp3.1\Inventory.deps.json
+D:\개발\project\C-TEXT-RPG\Inventory\bin\Debug\netcoreapp3.1\Inventory.runtimeconfig.json
+D:\개발\project\C-TEXT-RPG\Inventory\bin\Debug\netcoreapp3.1\Inventory.runtimeconfig.dev.json
+D:\개발\project\C-TEXT-RPG\Inventory\bin\Debug\netcoreapp3.1\Inventory.dll
+D:\개발\project\C-TEXT-RPG\Inventory\bin\Debug\netcoreapp3.1\Inventory.pdb
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.dll
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.pdb
+D:\개발\project\C-TEXT-RPG\Inventory\obj\Debug\netcoreapp3.1\Inventory.genruntimeconfig.cache
