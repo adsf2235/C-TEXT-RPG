@@ -6,6 +6,12 @@ namespace Inventory_3rd
     {
         int gold;
         string name;
+
+        public Item(string _name, int _gold)
+        {
+            name = _name;
+            gold = _gold;
+        }
     }
 
     class Inven
@@ -50,6 +56,41 @@ namespace Inventory_3rd
             }
             
         }
+
+        public void ItemIn(Item item)
+        {
+            for (int i = 0; i < ArrItem.Length; i++)
+            {
+                if (ArrItem[i] == null)
+                {
+                    ArrItem[i] = item;
+                    break;
+                }
+            }
+            
+        }
+
+        public void ItemIn(Item item, int _Order)
+        {
+            if (_Order <= 0)
+            {
+                _Order = 0;
+
+            }
+            if (_Order >= ArrItem.Length)
+            {
+                _Order = ArrItem.Length - 1;
+            }
+            if (ArrItem[_Order] != null)
+            {
+                ItemIn(item);
+            }
+            else
+            {
+                ArrItem[_Order] = item;
+            }
+        }
+       
     }
 
     class Program
@@ -57,6 +98,9 @@ namespace Inventory_3rd
         static void Main(string[] args)
         {
             Inven PInven = new Inven(5, 3);
+            PInven.ItemIn(new Item("철검",400));
+            PInven.ItemIn(new Item("갑옷", 1400));
+            PInven.ItemIn(new Item("철검", 400),569);
 
             while (true)
             {
