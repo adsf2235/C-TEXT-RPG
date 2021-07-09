@@ -4,13 +4,30 @@ namespace Inventory_3rd
 {
     class Item
     {
-        int gold;
-        string name;
+        int aGold;
+        string aName;
 
         public Item(string _name, int _gold)
         {
-            name = _name;
-            gold = _gold;
+            aName = _name;
+            aGold = _gold;
+        }
+
+        public int gold
+        {
+            get
+            {
+                return aGold;
+            }
+
+        }
+
+        public string name
+        {
+            get
+            {
+                return aName;
+            }
         }
     }
 
@@ -18,15 +35,17 @@ namespace Inventory_3rd
     {
         Item[] ArrItem;
         int XIndex;
+        int SelectIndex = 0;
+        int CheckIndex = 0;
 
         public Inven(int _X, int _Y)
         {
-            if(_X < 1)
+            if (_X < 1)
             {
                 _X = 1;
             }
 
-            if (_Y <1)
+            if (_Y < 1)
             {
                 _Y = 1;
             }
@@ -35,17 +54,75 @@ namespace Inventory_3rd
 
         }
 
+        public bool OverCheck(int _CheckIndex)
+        {
+            if (_CheckIndex >= ArrItem.Length)
+            {
+                return false;
+            }
+            if (_CheckIndex < 0)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public void RightMove()
+        {
+
+            CheckIndex += 1;
+            if (true == OverCheck(CheckIndex))
+            {
+                SelectIndex = CheckIndex;
+            }
+
+        }
+        public void LeftMove()
+        {
+
+            CheckIndex -= 1;
+            if (true == OverCheck(CheckIndex))
+            {
+                SelectIndex = CheckIndex;
+            }
+
+        }
+        public void UpMove()
+        {
+
+            CheckIndex -= XIndex;
+            if (true == OverCheck(CheckIndex))
+            {
+                SelectIndex = CheckIndex;
+            }
+
+        }
+        public void DownMove()
+        {
+
+            CheckIndex += XIndex;
+            if (true == OverCheck(CheckIndex))
+            {
+                SelectIndex = CheckIndex;
+            }
+
+        }
+
         public void Render()
         {
             for (int i = 0; i < ArrItem.Length; i++)
             {
-                if (i !=0 && i % XIndex == 0 )
+                if (i != 0 && i % XIndex == 0)
                 {
                     Console.WriteLine("");
 
                 }
 
-                if (ArrItem[i] != null)
+                if (i == SelectIndex)
+                {
+                    Console.Write("▣");
+                }
+                else if (ArrItem[i] != null)
                 {
                     Console.Write("■");
                 }
@@ -53,8 +130,24 @@ namespace Inventory_3rd
                 {
                     Console.Write("□");
                 }
+               
+            }
+            Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("현재 선택한아이템");
+            if (ArrItem[SelectIndex] != null)
+            {
+                Console.WriteLine("이름 : " + ArrItem[SelectIndex].name);
+                Console.WriteLine("가격 : " + ArrItem[SelectIndex].gold);
+            }
+            else
+            {
+                Console.WriteLine("비어있습니다.");
             }
             
+            
+
+
         }
 
         public void ItemIn(Item item)
@@ -67,7 +160,7 @@ namespace Inventory_3rd
                     break;
                 }
             }
-            
+
         }
 
         public void ItemIn(Item item, int _Order)
@@ -90,7 +183,7 @@ namespace Inventory_3rd
                 ArrItem[_Order] = item;
             }
         }
-       
+
     }
 
     class Program
@@ -98,15 +191,31 @@ namespace Inventory_3rd
         static void Main(string[] args)
         {
             Inven PInven = new Inven(5, 3);
-            PInven.ItemIn(new Item("철검",400));
+            PInven.ItemIn(new Item("철검", 400));
             PInven.ItemIn(new Item("갑옷", 1400));
-            PInven.ItemIn(new Item("철검", 400),569);
+            PInven.ItemIn(new Item("철검", 400), 569);
 
             while (true)
             {
                 Console.Clear();
                 PInven.Render();
-                Console.ReadKey();
+
+                switch (Console.ReadKey().Key)
+                {
+                    case ConsoleKey.LeftArrow:
+                        PInven.LeftMove();
+                        break;
+                    case ConsoleKey.RightArrow:
+                        PInven.RightMove();
+                        break;
+                    case ConsoleKey.UpArrow:
+                        PInven.UpMove();
+                        break;
+                    case ConsoleKey.DownArrow:
+                        PInven.DownMove();
+                        break;
+                }
+
             }
         }
     }
