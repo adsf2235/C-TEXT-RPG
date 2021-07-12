@@ -37,9 +37,13 @@ namespace Inventory_3rd
         int XIndex;
         int SelectIndex = 0;
         int CheckIndex = 0;
+        string name;
+        bool IsSelected = true;
 
-        public Inven(int _X, int _Y)
+
+        public Inven(int _X, int _Y, string _name)
         {
+            name = _name;
             if (_X < 1)
             {
                 _X = 1;
@@ -54,17 +58,31 @@ namespace Inventory_3rd
 
         }
 
+        public void Toggle_IsSelected()
+        {
+            IsSelected = !IsSelected;
+            SelectIndex = 0;
+            CheckIndex = 0;
+        }
+
+        public void ChangeInven()
+        {
+
+        }
+
+
+
         public bool OverCheck(int _CheckIndex)
         {
-            if (_CheckIndex >= ArrItem.Length)
+            if (_CheckIndex < 0 || _CheckIndex >= ArrItem.Length)
             {
                 return false;
             }
-            if (_CheckIndex < 0)
+            else
             {
-                return false;
+                return true;
             }
-            return true;
+
         }
 
         public void RightMove()
@@ -75,6 +93,12 @@ namespace Inventory_3rd
             {
                 SelectIndex = CheckIndex;
             }
+            else
+            {
+                CheckIndex -= 1;
+            }
+
+
 
         }
         public void LeftMove()
@@ -84,6 +108,10 @@ namespace Inventory_3rd
             if (true == OverCheck(CheckIndex))
             {
                 SelectIndex = CheckIndex;
+            }
+            else
+            {
+                CheckIndex += 1;
             }
 
         }
@@ -95,21 +123,36 @@ namespace Inventory_3rd
             {
                 SelectIndex = CheckIndex;
             }
+            else
+            {
+                CheckIndex += XIndex;
+            }
 
         }
         public void DownMove()
         {
-
             CheckIndex += XIndex;
+
             if (true == OverCheck(CheckIndex))
             {
                 SelectIndex = CheckIndex;
             }
+            else
+            {
+                CheckIndex -= XIndex;
+            }
+
+
+
 
         }
 
         public void Render()
         {
+            Console.WriteLine("");
+            Console.WriteLine(name + "의 인벤토리");
+            Console.WriteLine("");
+
             for (int i = 0; i < ArrItem.Length; i++)
             {
                 if (i != 0 && i % XIndex == 0)
@@ -118,34 +161,55 @@ namespace Inventory_3rd
 
                 }
 
-                if (i == SelectIndex)
+                if (IsSelected)
                 {
-                    Console.Write("▣");
-                }
-                else if (ArrItem[i] != null)
-                {
-                    Console.Write("■");
+                    if (i == SelectIndex)
+
+                    {
+                        Console.Write("▣");
+                    }
+                    else if (ArrItem[i] != null)
+                    {
+                        Console.Write("■");
+                    }
+                    else
+                    {
+                        Console.Write("□");
+                    }
+
                 }
                 else
                 {
-                    Console.Write("□");
+                    if (ArrItem[i] != null)
+                    {
+                        Console.Write("■");
+                    }
+                    else
+                    {
+                        Console.Write("□");
+                    }
                 }
-               
+
+
             }
             Console.WriteLine("");
-            Console.WriteLine("");
+            
             Console.WriteLine("현재 선택한아이템");
-            if (ArrItem[SelectIndex] != null)
+            if (IsSelected)
             {
-                Console.WriteLine("이름 : " + ArrItem[SelectIndex].name);
-                Console.WriteLine("가격 : " + ArrItem[SelectIndex].gold);
+                if (ArrItem[SelectIndex] != null)
+                {
+                    Console.WriteLine("이름 : " + ArrItem[SelectIndex].name);
+                    Console.WriteLine("가격 : " + ArrItem[SelectIndex].gold);
+                }
+                else
+                {
+                    Console.WriteLine("비어있습니다.");
+                }
+
             }
-            else
-            {
-                Console.WriteLine("비어있습니다.");
-            }
-            
-            
+
+
 
 
         }
@@ -190,32 +254,52 @@ namespace Inventory_3rd
     {
         static void Main(string[] args)
         {
-            Inven PInven = new Inven(5, 3);
+            Inven PInven = new Inven(5, 3, "플레이어");
             PInven.ItemIn(new Item("철검", 400));
             PInven.ItemIn(new Item("갑옷", 1400));
             PInven.ItemIn(new Item("철검", 400), 569);
+
+            Inven Store = new Inven(5, 3, "상점");
+            Store.ItemIn(new Item("철검", 400));
+            Store.ItemIn(new Item("HP포션", 20));
+            Store.ItemIn(new Item("MP포션", 30));
+            Store.ItemIn(new Item("리볼버", 1000));
+            Store.ItemIn(new Item("바주카", 25000));
+            Store.Toggle_IsSelected();
 
             while (true)
             {
                 Console.Clear();
                 PInven.Render();
+                Store.Render();
+                Console.WriteLine("인벤토리 전환 : Space Bar");
 
                 switch (Console.ReadKey().Key)
                 {
+                    
                     case ConsoleKey.LeftArrow:
                         PInven.LeftMove();
+                        Store.LeftMove();
                         break;
                     case ConsoleKey.RightArrow:
                         PInven.RightMove();
+                        Store.RightMove();
                         break;
                     case ConsoleKey.UpArrow:
                         PInven.UpMove();
+                        Store.UpMove();
                         break;
                     case ConsoleKey.DownArrow:
                         PInven.DownMove();
+                        Store.DownMove();
                         break;
+                    case ConsoleKey.Spacebar:
+                        PInven.Toggle_IsSelected();
+                        Store.Toggle_IsSelected();
+                        break;
+                        
                 }
-
+                
             }
         }
     }
