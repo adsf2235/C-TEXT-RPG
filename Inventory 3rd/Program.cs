@@ -39,6 +39,7 @@ namespace Inventory_3rd
         int CheckIndex = 0;
         string name;
         bool IsSelected = true;
+        
 
 
         public Inven(int _X, int _Y, string _name)
@@ -58,12 +59,69 @@ namespace Inventory_3rd
 
         }
 
+        public Item BuyCheck()
+        {
+            return ArrItem[SelectIndex];
+        }
+
+        public void Buy(Inven _inven)
+        {
+            if (IsSelected)
+            {
+                if (ArrItem[SelectIndex] != null)
+                {
+                    Console.Clear();
+                    Console.WriteLine(ArrItem[SelectIndex].name + "을 구매하였습니다");
+                    Console.WriteLine("금액은 " + ArrItem[SelectIndex].gold + "입니다");
+                    _inven.ItemIn(BuyCheck());
+                    ArrItem[SelectIndex] = null;
+                    Console.ReadKey();
+
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("선택된 아이템이 없습니다");
+                    Console.ReadKey();
+                }
+            }
+            
+        }
+        
+     
+            
+        
+
+      
+
+        public void Sale()
+        {
+            if (IsSelected)
+            { if(ArrItem[SelectIndex] != null)
+                {
+                    Console.Clear();
+                    Console.WriteLine("판매 완료하였습니다. " + ArrItem[SelectIndex].gold + "의 수익을 얻었습니다.");
+                    ArrItem[SelectIndex] = null;
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("선택된 물건이 없습니다.");
+                    Console.ReadKey();
+                }
+                
+                
+            }
+        }
+
         public void Toggle_IsSelected()
         {
             IsSelected = !IsSelected;
             SelectIndex = 0;
             CheckIndex = 0;
         }
+      
 
         public void ChangeInven()
         {
@@ -272,7 +330,10 @@ namespace Inventory_3rd
                 Console.Clear();
                 PInven.Render();
                 Store.Render();
+                Console.WriteLine("");
+                Console.WriteLine("");
                 Console.WriteLine("인벤토리 전환 : Space Bar");
+                Console.WriteLine("판매 / 구매 : G");
 
                 switch (Console.ReadKey().Key)
                 {
@@ -296,6 +357,11 @@ namespace Inventory_3rd
                     case ConsoleKey.Spacebar:
                         PInven.Toggle_IsSelected();
                         Store.Toggle_IsSelected();
+                        break;
+                    case ConsoleKey.G:
+                        PInven.Sale();
+                        Store.Buy(PInven);
+                        
                         break;
                         
                 }
