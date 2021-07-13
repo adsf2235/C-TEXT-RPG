@@ -1,0 +1,13 @@
+D:\개발\project\C-TEXT-RPG\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.exe
+D:\개발\project\C-TEXT-RPG\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.deps.json
+D:\개발\project\C-TEXT-RPG\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.json
+D:\개발\project\C-TEXT-RPG\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.runtimeconfig.dev.json
+D:\개발\project\C-TEXT-RPG\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.dll
+D:\개발\project\C-TEXT-RPG\Dictionary\bin\Debug\netcoreapp3.1\Dictionary.pdb
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csproj.AssemblyReference.cache
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfoInputs.cache
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.AssemblyInfo.cs
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.csproj.CoreCompileInputs.cache
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.dll
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.pdb
+D:\개발\project\C-TEXT-RPG\Dictionary\obj\Debug\netcoreapp3.1\Dictionary.genruntimeconfig.cache
