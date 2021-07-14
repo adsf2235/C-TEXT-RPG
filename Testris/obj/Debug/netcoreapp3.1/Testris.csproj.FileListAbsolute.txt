@@ -1,0 +1,13 @@
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.csproj.AssemblyReference.cache
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.AssemblyInfoInputs.cache
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.AssemblyInfo.cs
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.csproj.CoreCompileInputs.cache
+D:\개발\project\C-TEXT-RPG\Testris\bin\Debug\netcoreapp3.1\Testris.exe
+D:\개발\project\C-TEXT-RPG\Testris\bin\Debug\netcoreapp3.1\Testris.deps.json
+D:\개발\project\C-TEXT-RPG\Testris\bin\Debug\netcoreapp3.1\Testris.runtimeconfig.json
+D:\개발\project\C-TEXT-RPG\Testris\bin\Debug\netcoreapp3.1\Testris.runtimeconfig.dev.json
+D:\개발\project\C-TEXT-RPG\Testris\bin\Debug\netcoreapp3.1\Testris.dll
+D:\개발\project\C-TEXT-RPG\Testris\bin\Debug\netcoreapp3.1\Testris.pdb
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.dll
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.pdb
+D:\개발\project\C-TEXT-RPG\Testris\obj\Debug\netcoreapp3.1\Testris.genruntimeconfig.cache
