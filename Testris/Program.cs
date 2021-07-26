@@ -8,9 +8,10 @@ namespace Testris
     class Program
     {
         static void Main(string[] args)
-        {
-            TETRISSCREEN NewSC = new TETRISSCREEN(10, 15);
-            Block newBlock = new Block(NewSC);
+       {
+            TETRISSCREEN NewSC = new TETRISSCREEN(10, 15, true); ;
+            ACCSCREEN NewASC = new ACCSCREEN(NewSC);
+            Block newBlock = new Block(NewSC,NewASC);
 
             while (true)
             {
@@ -21,7 +22,10 @@ namespace Testris
 
                 Console.Clear();
                 NewSC.Render();
+                
                 NewSC.Clear();
+                NewASC.Render();
+               // NewASC.DestroyCheck();
                 newBlock.Move();
                 
 
